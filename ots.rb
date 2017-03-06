@@ -15,7 +15,6 @@ class Ots < Formula
     system "./autogen.sh" if build.head?
     system "./configure"
     system "make", "CXXFLAGS=-DOTS_DEBUG"
-    bin.install "perf"
     bin.install "ot-sanitise"
   end
 
